@@ -1,5 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
-
 public static class Form
 {
 	public static string AskNonEmptyString(string question)
