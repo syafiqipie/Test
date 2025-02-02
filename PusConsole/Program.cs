@@ -1,9 +1,12 @@
 ﻿Database.LoadBooks();
-List<string> menus = ["A", "B", "C", "Q"];
+Database.LoadItems();
+
+List<string> menus = ["A", "B", "C", "D", "Q"];
 string question = """
 Input A to view the book data,
 Input B to add a book,
 Input C to search books by ISBN,
+Input D to add items,
 Input Q to quit
 """;
 string menuChoice = Form.AskMultipleChoices(question, menus);
@@ -25,6 +28,11 @@ while(menuChoice is not "Q")
     else if(menuChoice is "C")
     {
         Database.SearchBook();
+        menuChoice = Form.AskMultipleChoices(question, menus);
+    }
+    else if (menuChoice is "D")
+    {
+        Database.AddItems();
         menuChoice = Form.AskMultipleChoices(question, menus);
     }
 }

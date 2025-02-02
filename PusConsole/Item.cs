@@ -1,14 +1,12 @@
 public class Item {
-    public string ID;
+    public string ID = Utility.RandomString();
     public string ISBN;
-    public Availability Status;
-    public Item(string id, string isbn, Availability status) {
-        ID = id;
+    public Availability Status = Availability.Available;
+    public Item(string isbn) {
         ISBN = isbn;
-        Status = status;
     }
 }
 
 public enum Availability {
-    Available, Not_Available
+    Not_Available, Available
 }

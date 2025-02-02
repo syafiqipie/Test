@@ -13,4 +13,16 @@ public static class Utility
 
         return new string(stringChars);
     }
+    
+    public static string Stock(string isbn) {
+        int n = 0;
+        int m = 0;
+        foreach (Item item in Database.Items) {
+            if (item.ISBN == isbn) {
+                if (item.Status == Availability.Available) n++;
+                m++;
+            }
+        }
+        return $"{n}/{m}";
+    }
 }
