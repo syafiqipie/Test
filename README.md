@@ -1,5 +1,5 @@
 # Pustaka Console System
-_"Your one stop solution for pustaka (library) system, now on the console!"_
+_"Your one stop solution for pus (library) system, now on the console!"_
 
 ## Usage
 
