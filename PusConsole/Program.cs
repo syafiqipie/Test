@@ -6,7 +6,7 @@ Input B to add a book,
 Input C to search books by ISBN,
 Input Q to quit
 """;
-string menuChoice = Form.AskMutlipleChoices(question, menus);
+string menuChoice = Form.AskMultipleChoices(question, menus);
 
 while(menuChoice is not "Q")
 {
@@ -14,18 +14,18 @@ while(menuChoice is not "Q")
     {
         // do something with Database.Books
         Database.DisplayBooks();
-        menuChoice = Form.AskMutlipleChoices(question, menus);
+        menuChoice = Form.AskMultipleChoices(question, menus);
     }
     else if(menuChoice is "B")
     {
         // do something with Database.Books
         Database.AddBook();
-        menuChoice = Form.AskMutlipleChoices(question, menus);
+        menuChoice = Form.AskMultipleChoices(question, menus);
     }
     else if(menuChoice is "C")
     {
         Database.SearchBook();
-        menuChoice = Form.AskMutlipleChoices(question, menus);
+        menuChoice = Form.AskMultipleChoices(question, menus);
     }
 }
 Console.WriteLine("Goodbye!");

@@ -1,7 +1,17 @@
 {
-  "1234567890987": {
-    "ISBN": "1234567890987",
-    "Title": "One Piece",
-    "Author": "Eiichiro Oda"
+  "0671027379": {
+    "ISBN": "0671027379",
+    "Title": "Deception Point",
+    "Author": "Dan Brown"
+  },
+  "9780140439083": {
+    "ISBN": "9780140439083",
+    "Title": "A Study in Scarlet",
+    "Author": "Arthur Conan Doyle"
+  },
+  "0-12-226551-3": {
+    "ISBN": "0-12-226551-3",
+    "Title": "Principles of Mathematical Modeling, 2nd Edition",
+    "Author": "Clive L. Dym"
   }
 }

@@ -13,7 +13,7 @@ public static class Form
 		return input!;
 	}
 
-	public static string AskMutlipleChoices(string question, List<string> choices)
+	public static string AskMultipleChoices(string question, List<string> choices)
 	{
 		Console.WriteLine(question);
 		string? input = Console.ReadLine();
