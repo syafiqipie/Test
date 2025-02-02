@@ -26,8 +26,17 @@ public static class Form
 		return input!;
 	}
 
-	public static int AskInteger(string question)
+	public static int AskPositiveInteger(string question)
 	{
-		throw new NotImplementedException();
+		Console.WriteLine(question);
+		string? input = Console.ReadLine();
+		int number;
+		while(input is null || !int.TryParse(input, out number) || number <= 0)
+		{
+			Console.WriteLine("Try again.");
+			input = Console.ReadLine();
+		}
+
+		return number;
 	}
 }
